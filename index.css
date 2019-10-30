@@ -2,9 +2,13 @@ body {
   text-align: center;
   height: 100vh;
   display: flex;
-  margin: 0 auto;
   background-color: #ff92ba;
   transition: background-color 0.2s ease-out;
   /* without overflow there is vertical scroll due to height:100vh; */
   overflow-y: hidden; 
+}
+
+.container {
+	/* margin auto is enough to center the element*/
+	margin: auto;
 }
