@@ -10,10 +10,16 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Based on https://codepen.io/agoodwin/pen/BaajOvr -->
+        <!-- Based on https://codepen.io/agoodwin/pen/BaajOvr 
+            Changed to make both circle and text clickable - to imitate the natural behaviour of checkbox and its label.
+            In original only circle is clickable.
+            There is a discussion about which behaviour is expected from UX perspective - https://github.com/Automattic/wp-calypso/issues/10949
+        -->
         <div class="container">
-          <input type="checkbox" id="toggle" />
-          <label for="toggle"></label>
+          
+          <label for="toggle">
+              <input type="checkbox" id="toggle" />
+          </label>
         </div>
 
         <script src="index.js"></script>
