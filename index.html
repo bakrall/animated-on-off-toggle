@@ -15,9 +15,11 @@
             In original only circle is clickable.
             There is a discussion about which behaviour is expected from UX perspective - https://github.com/Automattic/wp-calypso/issues/10949
         -->
-        <div class="container">
+        <div class="container" tabindex="0">
             <input type="checkbox" id="toggle" />
-            <label for="toggle"></label>
+            <label for="toggle">
+                <span class="visually-hidden" aria-live="polite"></span> <!-- aria-live on Chrome with NVDA disables support for Enter/Space; however NVDA is supposed to work best with Firefox -->
+            </label>
         </div>
 
         <script
